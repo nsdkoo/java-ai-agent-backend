@@ -9,19 +9,14 @@ import org.springframework.context.ApplicationListener;
 import org.springframework.context.event.ContextClosedEvent;
 
 @SpringBootApplication
-public class AI Agent PlatformApplication implements CommandLineRunner, ApplicationListener<ContextClosedEvent> {
-
-
-
+public class AgentApplication implements CommandLineRunner, ApplicationListener<ContextClosedEvent> {
 
     @Autowired
     AgentManager agentManager;
 
-
-
     public static void main(String[] args) {
         try {
-            SpringApplication.run(AI Agent PlatformApplication.class, args);
+            SpringApplication.run(AgentApplication.class, args);
         } catch (Exception ex) {
             ex.printStackTrace();
         }
@@ -29,7 +24,6 @@ public class AI Agent PlatformApplication implements CommandLineRunner, Applicat
 
     @Override
     public void onApplicationEvent(ContextClosedEvent event) {
-
     }
 
     @Override
@@ -41,6 +35,4 @@ public class AI Agent PlatformApplication implements CommandLineRunner, Applicat
     public void run(String... args) throws Exception {
         agentManager.startAgent();
     }
-
-
 }

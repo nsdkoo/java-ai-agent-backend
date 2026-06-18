@@ -44,7 +44,7 @@ def fetch_url(url):
     from bs4 import BeautifulSoup
 
     resp = requests.get(url, timeout=15, headers={
-        "User-Agent": "Mozilla/5.0 (compatible; OpenClaw4J/1.0)"
+        "User-Agent": "Mozilla/5.0 (compatible; JavaAgent/1.0)"
     })
     resp.raise_for_status()
 

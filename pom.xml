@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.app.agent</groupId>
-    <artifactId>xmessage-openclaw4j</artifactId>
+    <artifactId>java-ai-agent-backend</artifactId>
     <version>1.0.0</version>
 
     <properties>
@@ -245,7 +245,7 @@
                 <version>${spring-boot-maven-plugin.version}</version>
                 <configuration>
                     <!-- 替换为你的项目主类全路径（必填，否则打包后无法运行） -->
-                    <mainClass>com.app.agent.AI Agent PlatformApplication</mainClass>
+                    <mainClass>com.app.agent.AgentApplication</mainClass>
                     <executable>true</executable>
                 </configuration>
                 <executions>
